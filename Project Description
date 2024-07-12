@@ -1,0 +1,53 @@
+HTML Constructor & Formatter
+Objective: Design a library in any language that allows developers to read, manipulate, and format standard XML output.
+
+Detailed Requirements:
+
+Reading and Constructing XML:
+
+Reading: The library should read XML strings and format the output. The XML being read must be standard XML.
+Reference for XML syntax: W3Schools XML Syntax
+Constructing: The library should be able to construct XML via an API and format the output.
+Output:
+
+Support for Different Configurations:
+Compact or One-Line Format:
+
+Compact:
+<note>
+  <subNote>
+    haha
+  </subNote>
+</note>
+
+One line:
+<note><subNote>haha</subNote></note>
+
+Indentation:
+In compact mode, support 2 spaces, 4 spaces, and tab characters for indentation.
+Support empty element expression, forced compact format, forced open format, or retain the read state.
+
+Compact:
+<note>
+  <subNote />
+</note>
+
+Open:
+<note>
+  <subNote></subNote>
+</note>
+
+Retaining the original read state means that if the original XML was compact, the output should also be compact. If the original XML was open, the output should be open.
+Attribute Alignment: Support different display styles: continuous or aligned.
+
+Continuous:
+
+<note happy="yes" sad="no">
+  <subNote />
+</note>
+
+Align:
+<note happy="yes"
+      sad="no">
+  <subNote />
+</note>
